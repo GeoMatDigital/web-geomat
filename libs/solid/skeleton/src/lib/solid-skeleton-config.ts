@@ -25,6 +25,7 @@ export interface RoutingConfig {
   privacy: RouteConfigWithComponent;
   profile: RouteConfigFromModule;
   quiz: RouteConfigFromModule;
+  drag: RouteConfigFromModule;
   slideshow: RouteConfigFromModule;
   // custom?: (RouteConfigWithComponent | RouteConfigFromModule)[];
 }
@@ -115,6 +116,17 @@ export const defaultSkeletonConfig: Omit<
       matIcon: 'question_answer',
       moduleImport: () =>
         import('@zentrumnawi/solid-quiz').then((m) => m.SolidQuizModule),
+    },
+    drag: {
+      enabled: false,
+      showOnLandingPage: true,
+      showInMenu: true,
+      url: 'bac',
+      title: 'Drag and drop',
+      order: 2,
+      matIcon: 'question_answer',
+       moduleImport: () =>
+         import('@zentrumnawi/solid-quiz').then((m) => m.SolidQuizModule),
     },
     slideshow: {
       enabled: true,

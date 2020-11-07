@@ -47,6 +47,9 @@ export function generateRoutes(config: RoutingConfig) {
   if (config.quiz.enabled) {
     addModuleRoute(config.quiz);
   }
+  if (config.drag.enabled) {
+    addModuleRoute(config.drag);
+  }
   if (config.slideshow.enabled) {
     addModuleRoute(config.slideshow);
   }

@@ -27,11 +27,11 @@ const exampleDragAndDropQuestion: DragAndDropQuestion = {
     { text: '5', position: 5 },
   ],
   difficulty: 1,
-  feedback_correct: "You're a great mathematician",
+  feedback_correct: 'You\'re a great mathematician',
   feedback_incorrect: 'You should work on your math skills',
   id: 0,
   tags: [],
-  text: 'Order the following numbers',
+  text: 'Ordnen Sie die Filmnamen nach Alphabet',
   type: QuizQuestionType.DragAndDrop,
 };
 

@@ -1,1 +1,17 @@
-<p>drag-and-drop-choice-question works!</p>
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+    <div [ngStyle]="{'background-color': result[i]?.status }" 
+    class="example-box" *ngFor="let movie of movies; let i = index" cdkDrag>
+          {{movie}} {{result[i]?.text}}
+    </div>
+    
+  </div>
+   
+  <div *ngIf = "!isShow" class="example-list" style="padding-top: 50px;">
+      <div> <h2> Die richtige Reihenfolge ist:</h2> </div>
+  <div class="example-box" *ngFor="let movie of duplicate; let i = index"> 
+      {{movie}}
+      
+  </div>
+     
+</div>
+

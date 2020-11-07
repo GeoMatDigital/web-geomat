@@ -16,7 +16,6 @@ export namespace QuizActions {
 
     constructor() {}
   }
-
   export class QuestionAnswered {
     static readonly type = '[Quiz] question answered';
 

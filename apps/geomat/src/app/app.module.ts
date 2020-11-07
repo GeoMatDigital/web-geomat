@@ -28,6 +28,7 @@ import { coreConfig } from './solid-core-config';
 import { skeletonConfig } from './solid-skeleton-config';
 import { LandingBannerContentComponent } from './landing-banner-content/landing-banner-content.component';
 import { InfoPageContentComponent } from './info-page-content/info-page-content.component';
+import { CdkDragDropSortingExampleComponent } from './components/cdk-drag-drop-sorting-example/cdk-drag-drop-sorting-example.component';
 
 @Injectable()
 export class MyHammerConfig extends HammerGestureConfig {
@@ -47,6 +48,7 @@ export class MyHammerConfig extends HammerGestureConfig {
     LandingComponent,
     LandingBannerContentComponent,
     InfoPageContentComponent,
+    CdkDragDropSortingExampleComponent,
   ],
   imports: [
     BrowserModule,

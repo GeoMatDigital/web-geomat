@@ -19,8 +19,17 @@ h4 {
   margin-top: 16px;
 }
 
+.solid-logo {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .logos {
+  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+
+  @media (max-width: 1400px) {
+    justify-content: center;
+  }
 }

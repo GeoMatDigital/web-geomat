@@ -1,7 +1,5 @@
 @import '../../theme';
 
-$accent: map-get($app-theme, accent);
-
 :host {
   display: block;
   padding: 1rem;
@@ -10,7 +8,7 @@ $accent: map-get($app-theme, accent);
 .info-link,
 .info-link:link,
 .info-link:visited {
-  color: mat-color($accent);
+  color: mat-color($app-primary);
 }
 
 h1,
@@ -22,8 +20,17 @@ h4 {
   margin-top: 16px;
 }
 
+.solid-logo {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .logos {
+  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+
+  @media (max-width: 1400px) {
+    justify-content: center;
+  }
 }

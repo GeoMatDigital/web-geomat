@@ -3,6 +3,7 @@ import {
   Component,
   ElementRef,
   HostListener,
+  Inject,
   OnInit,
   ViewChild,
 } from '@angular/core';
@@ -15,6 +16,7 @@ import { map } from 'rxjs/operators';
 import { BehaviorSubject, combineLatest, Observable } from 'rxjs';
 import { Dispatch } from '@ngxs-labs/dispatch-decorator';
 import { ProfileActions } from '../../state/profile.actions';
+import { SOLID_PROFILE_BASE_URL } from '../../base-url';
 
 export function __internal__selectRouterStateParams(s: any) {
   return s.router.state.params;
@@ -48,7 +50,10 @@ export class BaseComponent implements OnInit, AfterViewInit {
   public SwipeRight = -1;
   public View = 'tree';
 
-  constructor(private _store: Store) {
+  constructor(
+    private _store: Store,
+    @Inject(SOLID_PROFILE_BASE_URL) public baseUrl: string
+  ) {
     this._store.dispatch([
       new ProfileActions.LoadDefinition(),
       new ProfileActions.LoadProfiles(),
@@ -165,7 +170,7 @@ export class BaseComponent implements OnInit, AfterViewInit {
     if (this.SelectedProfile) {
       return new Navigate(
         [
-          '/profile',
+          `${this.baseUrl}`,
           this.View === 'tree' ? 'grid' : 'tree',
           this.SelectedProfile.id,
         ],
@@ -174,7 +179,7 @@ export class BaseComponent implements OnInit, AfterViewInit {
       );
     }
     return new Navigate(
-      ['/profile', this.View === 'tree' ? 'grid' : 'tree'],
+      [`${this.baseUrl}`, this.View === 'tree' ? 'grid' : 'tree'],
       undefined,
       { replaceUrl: true }
     );
@@ -183,9 +188,9 @@ export class BaseComponent implements OnInit, AfterViewInit {
   @Dispatch()
   public selectProfile(profileId?: number) {
     if (profileId) {
-      return new Navigate(['/profile', this.View, profileId]);
+      return new Navigate([`${this.baseUrl}`, this.View, profileId]);
     }
-    return new Navigate(['/profile', this.View]);
+    return new Navigate([`${this.baseUrl}`, this.View]);
   }
 
   public swipeLeft() {

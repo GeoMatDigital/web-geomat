@@ -12,9 +12,11 @@ export const skeletonConfig: SolidSkeletonConfig = {
     },
     profile: {
       svgIcon: 'profile',
+      url: 'steckbriefe',
     },
     quiz: {
       svgIcon: 'quiz',
+      url: 'selbsttest',
     },
     info: {
       svgIcon: 'info',
@@ -22,10 +24,12 @@ export const skeletonConfig: SolidSkeletonConfig = {
     slideshow: {
       svgIcon: 'slideshow',
       title: 'Wissensgalerie',
+      url: 'wissensgalerie',
     },
     privacy: {
       component: PrivacyComponent,
       svgIcon: 'privacy',
+      url: 'datenschutz',
     },
   },
 };

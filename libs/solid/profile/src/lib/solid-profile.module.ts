@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
+import { InjectionToken, NgModule } from '@angular/core';
 import { TreeComponent } from './components/tree/tree.component';
 import { ListComponent } from './components/list/list.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { BaseComponent } from './components/base/base.component';
 import { GridComponent } from './components/grid/grid.component';
-import { SolidCoreModule } from '@zentrumnawi/solid-core';
+import { SolidCoreConfig, SolidCoreModule } from '@zentrumnawi/solid-core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { SolidProfileRoutingModule } from './solid-profile-routing.module';
 import { NgxsModule } from '@ngxs/store';

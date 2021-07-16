@@ -6,12 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: SlideshowSelectComponent,
-    data: { title: 'Bestimmungshelfer' },
   },
   {
     path: ':slideshowId',
     component: SlideshowComponent,
-    data: { title: 'Bestimmungshelfer' },
   },
 ];
 

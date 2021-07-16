@@ -65,7 +65,7 @@
     "@angular-devkit/architect": "0.1102.12",
     "@angular-devkit/build-angular": "0.1102.10",
     "@angular-devkit/schematics-cli": "^0.1102.12",
-    "@angular/cli": "11.2.9",
+    "@angular/cli": "12.1.2",
     "@angular/compiler-cli": "11.2.3",
     "@angular/language-service": "11.2.12",
     "@nrwl/angular": "11.4.0",

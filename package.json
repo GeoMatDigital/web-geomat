@@ -47,7 +47,7 @@
     "@ngxs-labs/dispatch-decorator": "^2.1.0",
     "@ngxs/devtools-plugin": "^3.7.1",
     "@ngxs/router-plugin": "^3.7.1",
-    "@ngxs/store": "^3.7.1",
+    "@ngxs/store": "^3.7.2",
     "@sentry/angular": "^6.3.3",
     "core-js": "^3.12.1",
     "detect-browser": "^5.1.0",

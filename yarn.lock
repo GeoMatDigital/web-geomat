@@ -2413,10 +2413,10 @@
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==
 
-"@types/openseadragon@^2.4.5":
-  version "2.4.5"
-  resolved "https://registry.yarnpkg.com/@types/openseadragon/-/openseadragon-2.4.5.tgz#aa62f1494b491fe6f9c8ec9140fd14897b557794"
-  integrity sha512-Excacasw35eubkCeaULd5+fcRHtgJX3uKpSVG0Zw1C3ciMYQA1X0klcYJAFKctvY6+x3sLVYJpeFnw5N9dSavg==
+"@types/openseadragon@^2.4.7":
+  version "2.4.7"
+  resolved "https://registry.yarnpkg.com/@types/openseadragon/-/openseadragon-2.4.7.tgz#bd1706912ca8ab7cd1129b1ce62a35c11b86fa67"
+  integrity sha512-DQBeHTBI5ThXoWwfooEidKY0z2xAkSC2etos0JzQ1H1VfbGcXOtExGnu0JpzDx498zOJyrklBZBWfmk31t2xNQ==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
